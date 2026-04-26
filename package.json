@@ -1,0 +1,41 @@
+{
+  "name": "market-sentiment-monitor",
+  "version": "1.0.0",
+  "description": "Sistem de monitorizare sentiment piață financiară României cu AI",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node main_integrated.js",
+    "monitor": "node main_integrated.js",
+    "simple": "node market_monitor.js",
+    "advanced": "node market_monitor_advanced.js",
+    "detect-changes": "node change_detector.js",
+    "watch": "nodemon main_integrated.js",
+    "logs": "tail -f logs/monitor.log",
+    "setup": "bash setup.sh"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.28.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^6.9.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "market",
+    "sentiment",
+    "romania",
+    "bvb",
+    "trading",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "MIT"
+}
